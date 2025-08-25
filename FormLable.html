@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select & Textarea Example</title>
+</head>
+<body>
+  <h2>Car Selection Form</h2>
+
+  <form action="/submit" method="post">
+    <!-- Datalist Example -->
+    <label for="browser">Choose a browser:</label>
+    <input list="browsers" id="browser" name="browser">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Edge">
+      <option value="Safari">
+    </datalist>
+
+    <br><br>
+
+    <!-- Textarea Example -->
+    <label for="feedback">Your Feedback:</label><br>
+    <textarea id="feedback" name="feedback" rows="5" cols="40" placeholder="Write your feedback here..."></textarea>
+
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
