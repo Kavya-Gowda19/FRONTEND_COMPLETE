@@ -1,0 +1,182 @@
+#navbar{ 
+    padding: 8px;
+}
+
+#logo{
+    height: 30px;
+}
+
+a{
+    text-decoration:none;
+    color:rgb(90, 205, 247);
+}
+
+a:hover, a:focus{
+    color:rgb(63, 151, 227)
+}
+
+#banner{
+    object-fit:cover;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Arial", sans-serif; 
+    /* font-family: "Edu NSW ACT Cursive", cursive;*/
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1;
+}
+
+h1{
+    text-align: center;
+    color: rgb(30, 14, 208);
+}
+
+#banner{
+    width: 100%;
+}
+
+.location{
+    color: rgb(48, 84, 227);
+    margin-bottom: 16px;
+}
+
+#about{
+    display: flex; /*if horizontal to */
+    max-width: 800px;/* maximum it should be displayed*/
+    margin: 0 auto;
+    padding:0 8px 0 8px ;
+}
+
+#description{
+    width:50%;
+    padding:0 8px 0 8px ; 
+    font-size:16px;
+}
+
+#team-image{
+     width:100% ;
+     border-radius: 5px;
+     height:200px;
+
+}
+
+#team{
+    width:50%;  
+}
+
+h1{font-size: 2.5rem;}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
+
+h2{
+    text-align: center;
+}
+
+#job{
+    table-layout: auto;
+    font-size: 14px;
+}
+
+h3{
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.apply{
+    float:right;
+}
+
+#footer{
+    background-color: rgb(244, 232, 232);
+    padding-top: 10px;
+    margin-top: 40px;
+}
+
+#footer-list{
+    list-style:none; /*removes point*/
+    text-align:center;
+}
+       
+#footer-list li{ /* child of each points*/
+    display:inline; /*single line vertically to horitzontal*/
+    margin:0 20px; /*leaving space between each link/points*/
+ }
+
+.copy-right{
+   color: rgb(72, 85, 85);
+}
+
+#jobs-table{
+    width:100%;
+    margin: 0 auto;
+    border: 2px solid rgb(13, 13, 13);
+    max-width: 800px;
+    border-collapse: collapse;
+}
+
+.jobs-header-row th{
+    border: 1px solid rgb(96, 93, 93);/*already alternate color so removing lines between the data*/
+    color:#222222;
+    padding: 8px;
+    background-color: rgb(113, 148, 179);
+    text-align: center;
+}
+
+.jobs-data-row td{
+    border: 1px solid rgb(96, 93, 93);
+    padding: 8px;
+}
+
+#jobs-table tr:nth-child(odd){
+    background-color: rgb(208, 233, 241);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Inter' , sans-serif;
+}
+
+#application {
+    max-width:800px ;
+      margin: 0 auto; /*make it to the center*/
+}
+
+#application-form div{
+    margin: 16px; /*cannt apply in label or input beacause its like span */
+}
+
+#application-form input,select,textarea{
+    padding:2px ;
+    margin-top: 4px;
+    font-size: 1rem;
+    border-radius:5px;
+    border:1px solid grey
+}
+
+.form-group textarea{
+    width:80%;
+}
+
+.form-group input[type="checkbox"]{ /* for box size increasing*/
+    width:16px;
+    height:16px;
+}
+
+.form-group input[type="submit"] {
+   background-color: blue;
+   color: rgb(231, 235, 239);
+   padding: 12px 20px;   /* top-bottom, left-right */
+   font-weight: 300;
+   display: block;       /* makes it behave like a box */
+   width: 200px;         /* set desired width */
+   height: 50px;         /* set desired height */
+   border: none;         /* remove default border */
+   border-radius: 6px;   /* optional, rounded corners */
+   cursor: pointer;      /* shows hand on hover */
+}
+
