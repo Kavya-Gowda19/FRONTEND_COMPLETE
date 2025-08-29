@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 300px;
+  height: 150px;
+  border: 2px solid black;
+  margin: 20px;
+  display: inline-block;
+  background-image: url("https://picsum.photos/50/50"); /* small image */
+}
+
+/* No repeat */
+.no-repeat {
+  background-repeat: no-repeat;
+  background-position: center; /* keep single image in center */
+}
+
+/* Repeat horizontally */
+.repeat-x {
+  background-repeat: repeat-x;
+}
+
+/* Repeat vertically */
+.repeat-y {
+  background-repeat: repeat-y;
+}
+
+/* Default → Repeat both directions */
+.repeat {
+  background-repeat: repeat;
+}
+</style>
+</head>
+<body>
+
+<div class="box no-repeat">no-repeat</div>
+<div class="box repeat-x">repeat-x</div>
+<div class="box repeat-y">repeat-y</div>
+<div class="box repeat">repeat</div>
+
+</body>
+</html>

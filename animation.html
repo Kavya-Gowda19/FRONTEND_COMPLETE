@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  background: teal;
+  margin: 50px auto;
+
+  /* Animation properties */
+  animation-name: bounceAndRotate;       /* which @keyframes */
+  animation-duration: 4s;                /* how long 1 cycle */
+  animation-iteration-count: infinite;   /* repeat forever */
+  animation-direction: alternate;        /* forward → backward */
+  animation-delay: 1s;                   /* wait before start */
+  animation-timing-function: ease-in-out;/* speed curve */
+  animation-fill-mode: forwards;         /* keep final state */
+  animation-play-state: running;         /* can pause/play */
+}
+
+/* Keyframes */
+@keyframes bounceAndRotate {
+  0%   { transform: translateY(0) rotate(0deg); background: teal; }
+  25%  { transform: translateY(-50px) rotate(90deg); background: orange; }
+  50%  { transform: translateY(0) rotate(180deg); background: tomato; }
+  75%  { transform: translateY(-50px) rotate(270deg); background: purple; }
+  100% { transform: translateY(0) rotate(360deg); background: teal; }
+}
+</style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+.hero {
+  height: 400px;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 150px;
+
+  /* Background Layer */
+  background-color: lightblue; /* fallback color */
+  background-image: url("https://picsum.photos/800/400"); /* decorative image */
+  background-repeat: no-repeat; /* no tiling */
+  background-position: center;  /* image stays at center */
+  background-size: cover;       /* fills area */
+  background-attachment: fixed; /* parallax effect */
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  🌟 Welcome to My Website 🌟
+</div>
+
+<p style="padding:20px">
+  Scroll down to see the <b>parallax effect</b> caused by 
+  <code>background-attachment: fixed;</code>.  
+  The background image stays fixed while content scrolls.
+</p>
+<p style="height:800px;"></p>
+
+</body>
+</html>

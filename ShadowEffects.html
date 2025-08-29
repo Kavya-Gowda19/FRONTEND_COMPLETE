@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Effects Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* 1. Box Shadow */
+    .box {
+      width: 200px;
+      padding: 20px;
+      margin: 20px auto;
+      background: lightblue;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+      border-radius: 10px;
+    }
+
+    /* 2. Text Shadow */
+    .shadow-text {
+      font-size: 32px;
+      color: darkblue;
+      text-shadow: 2px 2px 6px gray;
+    }
+
+    /* 3. Opacity */
+    .opacity-example {
+      width: 150px;
+      margin: 20px;
+      opacity: 0.5; /* 50% transparent */
+    }
+
+    /* 4. Filters */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .filters img {
+      width: 120px;
+      height: 120px;
+      border-radius: 8px;
+    }
+
+    .blur { filter: blur(4px); }
+    .grayscale { filter: grayscale(100%); }
+    .brightness { filter: brightness(150%); }
+    .contrast { filter: contrast(200%); }
+    .sepia { filter: sepia(100%); }
+    .invert { filter: invert(100%); }
+    .saturate { filter: saturate(300%); }
+  </style>
+</head>
+<body>
+
+  <!-- Box Shadow -->
+  <div class="box">This is a Box with Shadow</div>
+
+  <!-- Text Shadow -->
+  <h2 class="shadow-text">Text with Shadow</h2>
+
+  <!-- Opacity -->
+  <img src="https://picsum.photos/150" alt="Opacity Example" class="opacity-example">
+
+  <!-- Filters Section -->
+  <h3>Image Filters</h3>
+  <div class="filters">
+    <img src="https://picsum.photos/150" alt="Normal">
+    <img src="https://picsum.photos/150" class="blur" alt="Blur">
+    <img src="https://picsum.photos/150" class="grayscale" alt="Grayscale">
+    <img src="https://picsum.photos/150" class="brightness" alt="Brightness">
+    <img src="https://picsum.photos/150" class="contrast" alt="Contrast">
+    <img src="https://picsum.photos/150" class="sepia" alt="Sepia">
+    <img src="https://picsum.photos/150" class="invert" alt="Invert">
+    <img src="https://picsum.photos/150" class="saturate" alt="Saturate">
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto; /* 3 columns can be row too  ,also alows specific  100px 200px auto,[grid-template-columns: 1fr 1fr 1fr;
+  ➡ Splits space into 3 equal parts. fr = "fraction of available space".] */
+  gap: 10px; /* space between boxes */
+  background: lightcoral;
+}
+.grid-container div {
+  background: darkred;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div>Grid 1</div>
+  <div>Grid 2</div>
+  <div>Grid 3</div>
+  <div>Grid 4</div>
+  <div>Grid 5</div>
+  <div>Grid 6</div>
+</div>
+</body>
+</html>
+<!--Lets you define rows/columns explicitly.
+When you use display: grid on a container, its children automatically sit inside that grid layout.
+  ********Flexbox = one direction at a time (row OR column).
+          Grid = 2D control (rows AND columns at once).
+-->

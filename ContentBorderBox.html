@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Sizing Example</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      margin: 30px;
+    }
+
+    /* Common styles for both boxes */
+    .box {
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      border: 10px solid black;
+      background-color: lightblue;
+    }
+
+    /* Content-box (default) */
+    .content-box {
+      box-sizing: content-box;
+      background-color: lightcoral;
+    }
+
+    /* Border-box */
+    .border-box {
+      box-sizing: border-box;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>Content-Box vs Border-Box</h2>
+  <div class="container">
+    <div class="box content-box">
+      Content-Box <br>
+      Total width = 200 + padding + border
+    </div>
+    <div class="box border-box">
+      Border-Box <br>
+      Total width = stays 200px fixed
+    </div>
+  </div>
+</body>
+</html>

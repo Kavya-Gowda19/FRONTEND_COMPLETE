@@ -1,0 +1,17 @@
+<!--Overrides align-items for just one item.-->
+<style>
+.container {
+  display: flex;
+  height: 200px;
+  align-items: center; /* all items center vertically */
+  border: 2px solid black;
+}
+.item { width: 100px; height: 50px; background: lightblue; margin: 5px; }
+.special { align-self: flex-end; background: orange; }
+</style>
+
+<div class="container">
+  <div class="item">Box 1</div>
+  <div class="item special">Special (self-end)</div>
+  <div class="item">Box 3</div>
+</div>
