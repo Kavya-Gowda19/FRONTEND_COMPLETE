@@ -25,7 +25,7 @@ body{
     font-family: "Arial", sans-serif; 
     /* font-family: "Edu NSW ACT Cursive", cursive;*/
     font-weight: 600;
-    font-size: 60px;
+    font-size: 16px;
     line-height: 1;
 }
 
@@ -179,4 +179,5 @@ h1,h2,h3,h4,h5,h6{
    border-radius: 6px;   /* optional, rounded corners */
    cursor: pointer;      /* shows hand on hover */
 }
+
 
