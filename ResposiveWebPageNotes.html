@@ -1,0 +1,142 @@
+*****gud developer always keep checking others website to understood/make web responsive.
+
+RESPONSIVE WEB DESIGN:
+
+Responsive web design is an approach that ensures website adopts gracefully screen size,device and orientations.
+available screen width:
+1.Moblie(xs): < 576px
+2.Tablet(sm): 576px - 768px
+3.Desktop(md):768px - 992px
+4.(Optional)Large Desktop(1g):992px
+
+The specific width at which the design changes significantlly is called brakepoints.Your role as a web developer is too implement the layout 
+changes at specific breakpoints while ensuring that the page adopts gracefully at all intermediate screen widths.
+
+***to include
+    VIEWPORT META TAG:
+    To implement a responsive web design you must include the following meta tag.without this tag ur website may not show up as desired on mobile device.
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+-- check out some gud example of responsive web design - inside desgin,dropbox,hithub,dribble
+
+
+CSS MEDIA QUERIES
+CSS Media Queries are a feature in CSS that let you apply styles only when certain conditions about the device or screen are true.
+
+They are mainly used for responsive design — so your webpage looks good on mobile, tablet, and desktop.
+css media queries are a powerful tool that allows you to apply different styles to your web page based on device characteristics 
+such as screen size,resolution and orientations.
+
+ syntax
+ @media media_type and (condition){
+    /*css rules*/
+ }
+ css rules means the set of CSS properties and values
+
+    ✅ Syntax
+@media media_type and (condition) {
+  /* CSS rules here */
+}
+
+
+media_type → like screen, print, speech
+
+condition → like max-width: 768px, orientation: landscape
+
+CSS rules → the styles you want to apply when the condition matches
+
+ Example
+        /* Default styles */
+        body {
+        font-size: 18px;
+        background: white;
+        }
+
+        /* For small screens (like mobile) */
+        @media screen and (max-width: 600px) {
+        body {
+            font-size: 14px;
+            background: lightblue;
+        }
+        }
+
+        /* For tablets */
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+        body {
+            font-size: 16px;
+            background: lightgreen;
+        }
+        }
+
+        Why use Media Queries?
+        To make websites responsive
+        To change layout, fonts, colors, or images based on screen size
+        To hide/show elements on different devices
+
+
+Breakpoints are screen sizes at which you apply different CSS rules so the design looks good on all devices.
+Example
+/* Default styles for desktop */
+body {
+  background: lightgreen;
+}
+
+/* Breakpoint at 768px (tablet) */
+@media (max-width: 768px) {
+  body {
+    background: lightblue; /* changes when screen is 768px or smaller */
+  }
+}
+
+/* Breakpoint at 480px (mobile) */
+@media (max-width: 480px) {
+  body {
+    background: pink; /* changes when screen is 480px or smaller */
+  }
+}
+
+Here:
+
+768px → a breakpoint for tablets
+480px → a breakpoint for mobiles
+When the screen size crosses these points, the design “breaks” into a new layout.
+
+         Common Media Query Breakpoints
+
+                   // Extra small devices (phones, portrait) 
+                    @media (max-width: 480px) {
+                    styles for very small phones 
+                    }
+
+                    //Small devices (mobile, landscape) 
+                    @media (max-width: 600px) {
+                    styles for most phones 
+                    }
+
+                    //Medium devices (tablets, portrait) 
+                    @media (min-width: 601px) and (max-width: 768px) {
+                    /* styles for portrait tablets */
+                    }
+
+                     Large devices (tablets, landscape / small laptops) 
+                    @media (min-width: 769px) and (max-width: 1024px) {
+                    /* styles for landscape tablets & small laptops */
+                    }
+
+                    Extra large devices (laptops, desktops) 
+                    @media (min-width: 1025px) and (max-width: 1200px) {
+                    /* styles for normal laptops */
+                    }
+
+                     XXL devices (large desktops, wide screens)
+                    @media (min-width: 1201px) {
+                    /* styles for big monitors */
+                    }
+
+            How to remember easily
+
+                0-600px → Mobile 
+                601-768px → Tablets (portrait) 
+                769-1024px → Tablets (landscape) / small laptops 
+                1025-1200px → Desktops 
+                1201px+ → Large desktops / TVs 
