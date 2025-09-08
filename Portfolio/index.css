@@ -1,0 +1,266 @@
+html {
+    font-size: 16px;
+    /* can use em for relative sizes*/
+}
+
+
+
+
+
+body {
+    background-color: #FFF8F0;
+    font-family: inter;
+    font-weight: 400;
+    line-height: 24px;
+    color: #55206D;
+    margin: 0;/* removing the space at the top*/
+    padding: 0;
+
+}
+
+h1{
+    font-family: League Spartan;
+    font-size:48px;
+    font-weight:700;
+    line-height: 50px;
+    color:#190D37;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-family: League Spartan;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    color: black;
+   
+}
+
+.bigtext{
+    color: #331E6A;
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.hero_text{
+    width: 50%;
+    padding: 32px 20px 32px 20px; /* need little space at the top at he text side and image side no need so marigin:0*/
+}
+
+.small_text{
+   font-family: inter,sans-serif;
+   font-size:12px ;
+   font-weight: 400;
+    line-height: 14px;
+   color:#000000;
+}
+.hero_image_wrapper{
+    width:50%;
+}
+.hero_image{
+    width: 100%;/* takes 100% of parent width*/
+    border-bottom-left-radius:200px;
+    border-bottom-right-radius:200px;
+}
+
+.hero_section{
+    margin: 0 auto;
+    display: flex;/* helps in making two div horizontally giving 50% is important both section*/
+     max-width: 1060px;
+    margin: 0 auto 48px auto;
+}
+
+.hi-and-name{
+    margin-top:52px; /*space need at top*/
+}
+
+.contact_button{
+    height: 44px;
+    width:138px;
+    border-radius: 4px;
+    background-color: #2F2F2F;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #FFF8F0;
+    margin-top: 20px;
+}
+
+.pricing_section{
+    max-width: 1060px;
+    margin: 48px auto;/* it tells top and bottom margin is zero and [auto]right left it compress it to middle */
+}
+
+.overtitle{
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 600;
+    list-style: 18px;
+    text-transform: uppercase;
+    color: #2858FF;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.section_heading{
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section_subtitle{
+    text-align: center;
+    margin: 8px auto 48px auto;
+    max-width: 700px;
+}
+
+.pricing_boxes{
+    display: flex;
+
+}
+.pricingBox{
+
+    width: 33.33%;/*That means each card content is only 1/3rd width of its parent*/
+   
+}
+
+.pricing_card{
+     background-color: rgb(246, 249, 247);
+     margin:0 10px;
+     border-radius: 10px;
+     box-shadow: 6px 2px 25px -9px #0000001A;
+     padding:20px;
+}
+
+.pricing_card2{
+     background-color: #FFD748;
+     margin:0 10px;
+     border-radius: 10px;
+     box-shadow: 6px 2px 25px -9px #0000001A;
+     padding:20px;
+}
+
+
+.service{
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #2858FF;
+}
+
+.pricing{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #000000;
+    margin-top: 8px;
+}
+
+.pricing_per{
+     font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px
+}
+
+.service_description{
+     font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color:#8B8B8B;
+    margin-top:8px;
+
+}
+
+.service_benifits{
+   padding:0;
+   list-style-type: none;
+   font-family: Poppins;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   color:#666666;
+}
+
+.service_benifits li{
+    font-family: Poppins;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 24px;
+   color:#666666;
+    margin-bottom: 8px;
+}
+
+.service_contact_button{
+    width:100%;
+    height:44px;
+    border-radius: 4px;
+    border: 2px solid #2F2F2F;
+    background-color: white;
+    color:#2F2F2F;
+
+     font-family: inter;
+     font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.service_contact_button:hover{
+    background-color: #2F2F2F;
+    color: white;
+    cursor: pointer;
+}
+
+.card2{
+   background-color:#FFD748 ;
+}
+
+.card2 .service{
+    color:black;
+}
+
+.card2 .service_benifits{
+    color: #000000;
+}
+
+
+.card2 .service_description{
+    color: #000000;
+}
+
+.card-2 .pricing_per{
+    color: #000000;
+}
+
+.card2 .service_contact_button{
+        background-color: #2F2F2F;
+    color: white;
+
+}
+
+.card2 .service_contact_button:hover{
+        background-color:white;
+    color: black;
+
+}
+
+.footer{
+    width:100%;
+    text-align: center;
+    padding:20px;
+    background-color: #000000;
+    color: white;
+    margin-top: 48px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
+}
