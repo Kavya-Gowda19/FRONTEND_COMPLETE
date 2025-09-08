@@ -1,0 +1,281 @@
+.top{
+    display:flex;
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+
+.sheimg{
+    padding: 4px;
+}
+.hero{
+     display:flex;
+      margin: 0 auto;
+     max-width: 900px;
+}
+
+.submit{
+    margin: 0 auto;
+     max-width: 900px;
+     
+}
+
+.submit input{
+    background-color: rgb(63, 119, 133);
+    color:white;
+    padding: 13px;
+}
+
+.do h2{
+      margin: 0;
+     line-height: 1.2;
+    font-size: 28px;
+    text-align: center;
+    font-size:35px ;
+
+}
+
+.project h2{
+    font-size: 35px;
+}
+.dopara{
+    font-size:22px ;
+}
+
+.herodes{
+    width: 60%;
+   
+}
+.heroimg{
+    width:40%;    
+}
+.heroimg img{
+    width:100%;
+}
+
+.do , .project{
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+.docom{
+    display:flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pro{
+    max-width: 900px;
+    margin: 0 auto;
+    display:flex;
+}
+
+.herop{
+    font-size: 17px;
+    line-height: normal;
+    text-align: justify;  /* makes edges look aligned */
+}
+.proimg{    /* proimg is the div block*/
+   width:40%;
+   padding-bottom: 5px;
+   padding-top: 10px;
+}
+.prodes{
+   width:60%; 
+}
+
+.project p {
+  font-size: 16px !important;
+  
+}
+
+.project prodes p{
+    font-size: 20px;
+}
+
+a{
+     text-decoration:none;
+    color:rgb(91, 168, 231);
+    margin: 0px;
+
+}
+
+body{
+    background-color: rgba(242, 240, 238, 0.874);
+}
+
+
+.proimg img{
+    width:300px;
+    height:150px;
+    border-radius: 5px;
+    
+}
+
+.dopara , .doparap{
+    padding-left: 200px;
+    padding-right: 200px;
+    text-align: center;
+    font-weight: normal;
+    font-size: medium;
+}
+
+
+.frontend, .backend, .fullStack {
+  border: 1px solid rgb(67, 62, 62);
+  padding: 0px 20px 0px 20px  ;
+  margin: 10px;
+  text-align: center;
+  background-color:  rgb(214, 239, 245);
+  cursor: pointer; 
+}
+
+.frontend:hover, .backend:hover, .fullStack:hover {
+  background-color: #f0f0f0; /* background change */
+  transform: scale(1.05);   /* slight zoom This makes the box slightly bigger (105% of original size) when hovered. */
+  box-shadow: 0px 4px 16px rgba(16, 6, 210, 0.2); /* shadow */
+}
+
+.footer{
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(111, 149, 163);
+    color: white;
+}
+
+.prodespara{
+    font-size: 100px;
+}
+
+.prodes h5{
+    font-size: 19px;
+    margin-bottom: 2px;
+}
+
+.prodes p{
+    font-size: 19px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    text-align: justify;  /* makes edges look aligned */
+}
+
+
+a:hover, a:focus {
+     Color:rgb(6, 6, 241);
+}
+
+.pricing h2{
+    font-size: 35px;
+    text-align: center;
+    margin: 0;/* removses the space */
+     line-height: 1.2;
+}
+
+.pricepara{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.boxprice{
+     display:flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.boxpi{
+    padding:9px;
+    border: 1px solid grey;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.boxpi:nth-child(even) {
+   background-color: rgb(162, 222, 237);
+}
+
+.boxpi:hover{
+    background-color: rgb(162, 222, 237);
+    transform: scale(1);
+}
+
+.submitp{
+      display: flex;
+      justify-content: center;
+}
+
+.submitp input{
+    padding: 4px 8px 4px 8px;
+    
+    cursor: pointer;
+}
+
+
+
+.quespara{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 19px;
+}
+
+.Questions h2{
+    font-size: 35px;
+    margin:0;
+
+}
+
+.ques{
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.ques details{
+    border:1px solid grey;
+    padding:9px;
+    margin-bottom: 9px;
+    border-radius: 8px;
+    background-color: aliceblue;
+}
+
+.ques details:hover{  /* Hover effect  question*/
+    transform: scale(1.02);
+    background-color: azure;
+}
+
+.ques details[open] { /*when open*/
+  background: #d1eced;
+  border-color: #1e07ef;
+}
+
+.ques summary{
+    font-weight: bold;
+    cursor: pointer;
+  list-style: none;  /* remove default marker */ 
+  position: relative;
+  padding-right: 25px;
+}
+
+/* Add custom arrow */
+.ques summary::after {
+  content: "▼";
+  position: absolute; /*makes arrow at end*/
+  right: 0; /*helps arrow at end */
+
+  transition: transform 0.3s;
+  font-size: 14px;
+  color: #164eda;;
+}
+
+.ques details[open] summary::after {
+  content: "▲";
+  color: #164eda;
+}
+
+
