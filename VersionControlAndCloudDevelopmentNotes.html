@@ -1,0 +1,174 @@
+<!---
+   GIT:
+   Git is a popular version control system
+   It is used for: Tracking code changes,Tracking who made changes and Coding collaboration.
+   git is version controll system which has central server system which stores repository of code. we  take copy of code make changes and push back the the code  cenntral server that how other colllabrates
+
+
+   What is GitHub?
+   Git is not the same as GitHub.
+   GitHub makes tools that use Git.
+   GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018.
+   
+
+
+  VERSION AND CLOUD DEVELOPMENT:
+  -understanding Git and Github for version control is important for any developer.
+  -these tools allow you to track changes,collabrate with others and deploy ur application easily and efficiently to cloud platform.
+  -By mastering these skills,you can streamline ur workflow and improve the quality and reliability of ur code
+
+  Covered:
+    -using github repositories to store and share ur project source code
+    -using github codespace in conjunction with VS Code for web developmnet
+    -Developing and previewing changes to a website using github codespace
+    -creating git commits and pusing changes back to a gitub repository
+    -Devploying a website to the cloud directly from Github using Vercel
+    -Understanding the github callabration workflow with branches and pull requests
+    -installing and using Git locally on ur computer and connecting with github
+
+  Version Control:
+  Version Control is a system that tracks changes made to a file or a set files over time.
+
+    -It enables developers to keep track of different versions of their code
+    -It enables developrers collaborate with others and manage changes to their codebase
+    -It allows developers to revert to previous version of their code if needed
+    -It enables developers to work on different version of their code simultaneously without the risk of losing any changes
+    -It helps developers detect and resolve conflits that may arise when different team members work on the same code.
+     while there are many version control system (SVN,Git ,Mercurial,etc )Git is the most popular and widely used system for version cntrol.
+                       
+
+     GIT :
+                                     REMOTE                                -->  pull                        LOCAL(our laptop)
+                        (repositories live on a github server)             < --  push                       ur computer talks to the github server with teminal      
+                         
+                                         ^
+                                push     |  | pull
+
+                                 LOCAL(another laptop)
+                                some ones computer talks to the github server with teminal      
+
+
+     Git is a distributed version control system, which means that each developer has a complete copy of the codebase on their local machine.
+    • It uses a branching system that allows developers to work on diferent versions of their code simultaneously without affecting the main codebase.
+    · Developers can make changes to their local copy of the codebase and then push those changes to a central repository that stores all the different versions of the code.
+    • Git also allows developers to merge changes made by different team members and resolve conflicts that may arise during the merging process.
+    • Git has the ability to track changes made to individual lines of code and the ability to roll back to any previous version of the codebase.
+
+    GitHub:
+    GitHub is a web based platform that provides hosting for Git repositories and a range of collaboration tools for developers.other similar platform include Github and BitBucket
+    while Git is a powerful version control system.github offers several addition feature that make it an indisensable tool for software development teams.
+    -Git hub provides web-based interface for managing git repositories ,making it easy to view and manage code changes,track issues and collaboratewith others.
+    -Github offers a range of collaboration tools such as pull requests,code rview and team mangement features that help teams work together more efficiency
+    -GitHub provides hosting for both public and private repositories,making it an ideal platform for open source ptoject and proprietary software developmnet alike.     
+     
+    
+    GITHUB CODE SPACE:
+    is a local machine for us on the cloud give by gihub
+    is a cloud based development enviroment that allows you to write,test, and debug code directly in your browser.
+    it lets u work from everywhere.
+    opens visual studio code in the github only
+     
+                                        HISTORY
+                                           ^  git commit
+                                           |
+                                        STAGE(Index)
+                                           ^  git add files             
+                                           |
+                                        WORKING DIRECTORY(in codespace )
+
+
+    In terminal:
+    $ git status
+    $ reset(it reset it completely)
+    $ git add src
+    $ git commit -m "adding the html and css files"    //still changes are not added  
+    $ git push origin main   //here all will be added
+
+    KT:
+    $ git log( to see the all the commits changed)
+    $ reset(it reset it completely)
+
+    STEPS:
+    Once you've made changes to your code, it's important to update your GitHub repository to keep your code up-to-date and available to others.
+    1. Open the inbuilt command line terminal within the browser-based VS Code window.
+    2.(0ptional) Review the changes you have made using the git status and git diff
+    commands,
+    2. Stage the changes you made by typing git add <file-name> or git add . to stage
+    all changes,.
+    3. Commit the changes you staged by typing git commit -m "cotmit message".Make
+    sure your commit message is descriptive and explains what changes you made.
+    4. (Optional) You can verily that the change was made successfuly using the git log
+    command.
+    5. Push your changes to your GitHub repository by typing git push. This will update vour
+    repository with your latest changes.
+
+    CLOUD DEPLOYMENT WITH VERCEL:
+    Vercel is a cloud platform that makes it easy to deploy websites and applications.It offers seamless integration with
+    Github and other version control system,allowing developers to deploy their projects directly from thiw repositories.
+
+    Follow these steps to deploy your website to Vercel:
+      1, Go to htps://vercel.com and sign up for an account, You can use your GitHub account to sign
+      up or create a new account using your email address.
+      2. Once you have signed up, you will be taken to the Vercel dashboard. From here, you can start
+      a new project by clicking the"New Project" button.
+      3. Choose the repository you want to deploy, Vercel supports GitHub, GitLab, and Bitbucket
+      repositories. Select the repository and the branch you want to deploy.
+      4. Select the project root folder (in this case, it is the src folder) and click "Deploy" to deploy
+      the project.
+
+
+  GITHUB  COLLABORATION WORKFLOW:
+      GitHub development involves a collaborative workflow for managing code changes, which
+      includes branching, creating pull requests, getting them reviewed, and merging them, Here are the steps involved in this workflow:
+      1. Branch: Create a new branch for your changes, so you can work on them independently
+      2.Pull Request: Create a pull request to propose your changes to the rest of the team.
+      3, Review & Iteration: Your pull request will be reviewed by other developers, who can add
+      comments. You can make changes accordingly and update your pull request.
+      4, Merge: Once your pull request has been approved, you merge your changes into the main
+      codebase.
+
+  BRANCHING WITH GIT:
+  branching is the fundamental feature of git and github that allows developers to work on multiple versions of the same codespace simeltaneously.
+  A branch is essentially a seperate copy od all codebase that you can make changes to without affecting the main branch ("called "master" or "main")
+
+
+  KEEP UR BRANCH UP TO DATE:
+  When you are working on a new feature or making changes to your code, it's important to keep your feature branch up to date with the latest changes in the main branch
+
+
+
+  RESOLVE MERGE CONFLICTS
+
+  CLONING AN EXISTING REPOSITORY :
+  git clone is a Git command used to create a local copy of a remote Git repository, When you clone a repository, you create a complete copy of the repository on your local machine, including all of the code, 
+  branches, and history of the project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
