@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Properties Example</title>
+  <style>
+    /* 1. outline: none → remove blue outline when focused */
+    input.no-outline:focus {
+      outline: none;
+      border: 2px solid green; /* give custom focus instead */
+    }
+
+    /* 2. cursor: pointer → hand icon on hover */
+    button {
+      cursor: pointer;
+      padding: 8px 16px;
+      background-color: dodgerblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* 3. resize: none → disable textarea resizing */
+    textarea {
+      resize: none;
+      width: 200px;
+      height: 80px;
+    }
+
+    /* 4. appearance: none → remove default styles */
+    select {
+      appearance: none;  /* removes default dropdown arrow */
+      padding: 6px;
+      border: 1px solid #888;
+      border-radius: 4px;
+    }
+
+    /* 5. caret-color: red → blinking text cursor color */
+    input.caret-red {
+      caret-color: red;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Properties Demo</h2>
+
+  <!-- outline: none -->
+  <p><b>Outline None:</b></p>
+  <input type="text" class="no-outline" placeholder="Focus me (no outline)">
+
+  <!-- cursor: pointer -->
+  <p><b>Cursor Pointer:</b></p>
+  <button>Hover me (pointer)</button>
+
+  <!-- resize: none -->
+  <p><b>Resize None:</b></p>
+  <textarea placeholder="Can't resize me"></textarea>
+
+  <!-- appearance: none -->
+  <p><b>Appearance None:</b></p>
+  <select>
+    <option>Option 1</option>
+    <option>Option 2</option>
+  </select>
+
+  <!-- caret-color -->
+  <p><b>Caret Color:</b></p>
+  <input type="text" class="caret-red" placeholder="Type here (red cursor)">
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Examples</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      padding: 20px;
+      
+      background: linear-gradient(to bottom,rgb(238, 4, 4),rgb(229, 153, 153));
+    }
+
+    .section {
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+    }
+
+    /* 1. Linear Gradient */
+    .linear {
+      background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    }
+
+    /* 2. Radial Gradient */
+    .radial {
+      background: radial-gradient(circle at center, #43cea2, #185a9d);
+    }
+
+    /* 3. Conic Gradient */
+    .conic {
+      background: conic-gradient(from 90deg, red, yellow, green, blue);
+    }
+
+    /* 4. Multi-color stops */
+    .multi {
+      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    }
+
+    /* 5. Transparent Overlay */
+    .overlay {
+      background: 
+        linear-gradient(to bottom, rgba(0,0,0,0.8), transparent),
+        url("https://picsum.photos/1200/800") center/cover no-repeat;
+    }
+
+    /* 6. Gradient Button */
+    .btn {
+      background: linear-gradient(90deg, #36d1dc, #5b86e5);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #5b86e5, #36d1dc);
+      transform: scale(1.05);
+    }
+
+    /* 7. Gradient Text */
+    .gradient-text {
+        font-size: 3rem;
+        font-weight: bold;
+        background: linear-gradient(90deg, #ff6a00, #ee0979);
+        background-clip: text;
+        -webkit-background-clip: text;  /* for Chrome, Safari, Edge */
+        color: transparent;
+        -webkit-text-fill-color: transparent; /* for Chrome, Safari */
+}
+
+  </style>
+</head>
+<body>
+
+  <h1>Gradient Examples</h1>
+
+  <div class="section linear">Linear Gradient</div>
+  <div class="section radial">Radial Gradient</div>
+  <div class="section conic">Conic Gradient</div>
+  <div class="section multi">Multi-color Gradient</div>
+  <div class="section overlay">Image with Gradient Overlay</div>
+
+  <div class="section" style="flex-direction: column; background:#111;">
+    <p class="gradient-text">Gradient Text</p>
+    <button class="btn">Gradient Button</button>
+  </div>
+
+</body>
+</html>

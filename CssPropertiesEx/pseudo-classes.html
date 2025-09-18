@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Selectors Demo</title>
+  <style>
+    /* :checked → applies when checkbox/radio is selected */
+    input[type="checkbox"]:checked + label { /* here along with label also color changed*/
+      color: green;
+      font-weight: bold;
+    }
+
+    /* :disabled → styles disabled inputs */
+    input:disabled {
+      background: #ccc;
+      border: 1px solid #999;
+    }
+
+    /* :required → highlights required fields */
+    input:required {
+      border: 2px solid red;
+    }
+
+    /* ::before and ::after → add extra decorative content   content property is used only with :before and : after*/
+    .title::before {
+      content: "👉 ";
+      color: blue;
+    }
+    .title::after {
+      content: " ✔";
+      color: green;
+    }
+
+    /* :nth-child(2) → select the 2nd item */
+    ul li:nth-child(2) {
+      color: orange;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="title">CSS Selectors Example</h2>
+
+  <h3>1. :checked</h3>
+  <input type="checkbox" id="agree">
+  <label for="agree">I agree</label>
+
+  <h3>2. :disabled</h3>
+  <input type="text" value="Can't edit me" disabled>
+
+  <h3>3. :required</h3>
+  <input type="text" placeholder="Required field" required>
+
+  <h3>4. :nth-child(2)</h3>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2 (styled)</li>
+    <li>Item 3</li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS List & Table Example</title>
+  <style>
+    /* ---------------- LIST STYLES ---------------- */
+    ul.none   { list-style-type: none; }
+    ul.disc   { list-style-type: disc; }
+    ul.circle { list-style-type: circle; }
+    ul.square { list-style-type: square; }
+
+    /* list-style-position */
+    ul.inside  { list-style-position: inside; }
+    ul.outside { list-style-position: outside; }
+
+    /* ---------------- TABLE STYLES ---------------- */
+    table {
+      margin-top: 20px; 
+      width: 50%;
+      border: 2px solid black;  /*THIS adds the table’s outside border */
+    }
+
+    /* collapse: borders merge    outer table boeder is removed */
+    table.collapse {
+      border-collapse: collapse;
+    }
+    table.collapse td {
+      border: 2px solid blue;
+      padding: 10px;
+    }
+
+    /* border-spacing: creates gaps between cells */
+    table.spacing {
+      border-collapse: separate;
+      border-spacing: 10px; /* space between cells *//* <-- THIS adds cell borders */
+    }
+    table.spacing td {
+      border: 2px solid green;/* <-- THIS adds cell borders */
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>List Examples</h2>
+
+  <p><b>list-style-type:</b></p>
+  <ul class="none"><li>None</li><li>No bullets</li></ul>
+  <ul class="disc"><li>Disc</li><li>Default filled circle</li></ul>
+  <ul class="circle"><li>Circle</li><li>Empty circle</li></ul>
+  <ul class="square"><li>Square</li><li>Square bullets</li></ul>
+
+  <p><b>list-style-position:</b></p>
+  <ul class="inside">
+    <li>Inside → bullet is inside the text box</li>
+    <li>Second line starts below bullet</li>
+  </ul>
+  <ul class="outside">
+    <li>Outside → bullet outside text box</li>
+    <li>Second line aligns with text</li>
+  </ul>
+
+  <h2>Table Examples</h2>
+
+  <p><b>border-collapse: collapse;</b></p>
+  <table class="collapse">
+    <tr><td>A</td><td>B</td></tr>
+    <tr><td>C</td><td>D</td></tr>
+  </table>
+
+  <p><b>border-spacing: 10px;</b></p>
+  <table class="spacing">
+    <tr><td>A</td><td>B</td></tr>
+    <tr><td>C</td><td>D</td></tr>
+  </table>
+</body>
+</html>

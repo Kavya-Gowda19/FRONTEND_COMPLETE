@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Transform Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 30px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: lightcoral;
+      margin: 40px auto;
+      transition: all 0.5s ease; /* smooth animation */
+    }
+
+    /* 1. Translate (move) */
+    .translate {
+      transform: translate(50px, 20px); /* move right 50px, down 20px */
+    }
+
+    /* 2. Rotate */
+    .rotate {
+      transform: rotate(45deg); /* rotate 45 degrees */
+    }
+
+    /* 3. Scale */
+    .scale-big {
+      transform: scale(1.5); /* enlarge 1.5x */
+    }
+    .scale-small {
+      transform: scale(0.5); /* shrink to half */
+    }
+
+    /* 4. Skew */
+    .skew {
+      transform: skew(20deg, 10deg); /* tilt */
+    }
+
+    /* 5. Transform Origin */
+    .origin {
+      transform-origin: top left;
+      transform: rotate(45deg);
+      background: lightblue;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+
+  <h2>CSS Transform Examples</h2>
+
+  <div class="box translate">Translate</div>
+  <div class="box rotate">Rotate</div>
+  <div class="box scale-big">Scale Up</div>
+  <div class="box scale-small">Scale Down</div>
+  <div class="box skew">Skew</div>
+  <div class="box origin">Origin: top left</div>
+
+</body>
+</html>

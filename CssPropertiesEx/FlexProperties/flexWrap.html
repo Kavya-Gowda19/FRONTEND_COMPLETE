@@ -1,0 +1,43 @@
+<!--By default, Flexbox puts everything in one row.
+If items don’t fit, they shrink-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 2px solid black;
+}
+.item {
+  background: lightblue;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h2>flex-wrap Example</h2>
+<div class="container">
+  <div class="item">Box 1</div>
+  <div class="item">Box 2</div>
+  <div class="item">Box 3</div>
+  <div class="item">Box 4</div>
+  <div class="item">Box 5</div>
+  <div class="item">Box 5</div>
+  <div class="item">Box 4</div>
+  <div class="item">Box 5</div>
+  <div class="item">Box 5</div>
+  <div class="item">Box 4</div>
+  <div class="item">Box 5</div>
+  <div class="item">Box 5</div>
+</div>
+
+</body>
+</html>
